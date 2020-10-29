@@ -1,38 +1,104 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Activity 5: Responsive design</title>
-  </head>
-  <body>
-    <h1>Activity 5: Responsive design</h1>
-    <p>The aim of this activity is to build a responsive layout using Bootstrap.
-       Write the code under the following paragraph, it must have:
-    </p>
-    <ul>
-      <li>A menu bar with 3 options (Option 1, Option 2, Option 3), the last
-        option must be a dropdown option with 2 options inside (Option 3.1,
-        Option 3.2)
-      </li>
-      <li>A red backgound main content space (8 cols, 12 cols on small) next to a blue background
-        right bar (4 cols, 12 cols on small)
-      </li>
-      <li>A grey backgound footer space full width
-      </li>
-    </ul>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    .dropdown-menu a:hover {background-color: gray;}
+  </style>
+  <title>Activity 5: Responsive design</title>
+</head>
 
-    <!-- Your code here -->
+<body>
+  <h1>Activity 5: Responsive design</h1>
+  <p>The aim of this activity is to build a responsive layout using Bootstrap.
+    Write the code under the following paragraph, it must have:
+  </p>
+  <ul>
+    <li>A menu bar with 3 options (Option 1, Option 2, Option 3), the last
+      option must be a dropdown option with 2 options inside (Option 3.1,
+      Option 3.2)
+    </li>
+    <li>A red backgound main content space (8 cols, 12 cols on small) next to a blue background
+      right bar (4 cols, 12 cols on small)
+    </li>
+    <li>A grey backgound footer space full width
+    </li>
+  </ul>
 
+  <!-- Your code here -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Option 1 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Option 2</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Option 3
+          </a>
+          <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-light" href="#">Option 3.1</a>
+            <a class="dropdown-item text-light" href="#">Option 3.2</a>
+          </div>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-md-8 bg-danger">
+        Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de
+        las Haciendas Locales
+        Sumario
+        INTRODUCCION
+        Artículo único. Aprobación del texto refundido de la Ley Reguladora de las Haciendas Locales
+        TEXTO REFUNDIDO DE LA LEY REGULADORA DE LAS HACIENDAS LOCALES
+        TÍTULO PRELIMINAR. Ámbito de aplicación
+        Artículo 1 Ámbito de aplicación
+        TÍTULO I. Recursos de las haciendas locales
+      </div>
+      <div class="col-sm-12 col-md-4 bg-primary">
+        CAPÍTULO I. Enumeración
+        Artículo 2 Enumeración de los recursos de las entidades locales
+        CAPÍTULO II. Ingresos de derecho privado
+        Artículo 3 Definición
+        Artículo 4 Régimen jurídico
+        Artículo 5 Limitación de destino
+        CAPÍTULO III. Tributos
+      </div>
+    </div>
+    </div>
+    <footer>
+    <div class="container-fluid bg-secondary text-white">this is a footer</div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
