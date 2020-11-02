@@ -41,6 +41,39 @@
        padding: 10px;
      }
     </style>
+    <style>
+    .transition2 {
+      opacity:1;
+      transition:opacity 1000ms;
+    }
+    .transition2:hover {
+      opacity:0;
+    }
+    .transition3 {
+      transition: width 0.5s;
+    }
+    .transition3:hover {
+      width: 100%;
+    }
+    .transition4 {
+      transition:  color 0.5s;
+    }
+    .transition4:hover {
+      color:yellowgreen;
+    }
+    @keyframes rotate {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+    }
+  
+  .transition5:hover {
+      animation-name: rotate;
+      animation-duration: 0.5s;
+      animation-timing-function:linear;
+      animation-iteration-count:initial;
+    }
+}
+    </style>
   </head>
   <body>
     <h1>Activity 5: Transitions</h1>
